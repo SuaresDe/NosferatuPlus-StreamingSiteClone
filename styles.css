@@ -1,0 +1,194 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --background-cor: #00030C;
+    --fonte-NotoSerif: 'Noto Serif';
+    --botao-azul-efeito: #66abff;
+}
+
+body {
+    background-color: var(--background-cor);
+    color: var(--branco-principal);
+    font-family: var(--fonte-NotoSerif);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/fundo-nosferatu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.container__aviso {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+    text-shadow: 
+        -1px -1px 0 black,  
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black; 
+}
+
+.container__logoimg {
+    margin: 1em 0 1.5em 0;
+}
+
+.container__subtitulo {
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+    text-shadow: 
+        -1px -1px 0 black,  
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black; 
+}
+
+.container__div {
+    margin: 0 6em;
+    margin-bottom: 13em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.3em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+    font-size: 25px;
+}
+
+.container__sagasfilmes {
+    display: flex;
+}
+
+.sagas {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between; /* Distribui as imagens com espaçamento igual */
+    align-items: center; /* Alinha as imagens verticalmente */
+    padding: 20px; /* Adicionando espaçamento interno */
+}
+
+.imagemsagas {
+    margin-right: 5px;
+    flex: 1;
+    height: 66vh;
+    max-width: 100%;
+}
+
+.filme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome-filme {
+    margin-top: 5px; 
+    text-align: center; 
+    color: var(--branco-principal); 
+    font-family: var(--fonte-NotoSerif);
+    font-size: 28px;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 25px;
+    color: var(--branco-principal);
+    margin: 3em 0;
+    margin-top: 7em;
+}
+
+.dispositivos__titulo {
+    font-size: 46px;
+    color: var(--branco-principal);
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 2em;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 1.5em 0em;
+    margin-top: 13em;
+}
+
+.rodape__img {
+    width: 13%;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: #00030C;
+}
